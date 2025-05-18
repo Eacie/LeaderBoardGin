@@ -10,6 +10,8 @@ import (
 	"time"
 )
 
+//todo 根据业务传参类型在service层对应不同的redisKey，一个enum值是类型，名字是key那种应该最方便，在C#可以实现，go后边再看看
+
 // UpdateScore 这只是给个方便自己测试接口，实际更新应该是由项目业务触发的，就不校验什么了
 func UpdateScore(c *gin.Context) {
 	var req models.UpdateScoreRequest
